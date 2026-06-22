@@ -2,11 +2,11 @@
 
 ## Path
 
-| Kategori       | Path                                     |
-|----------------|------------------------------------------|
-| Agent Output   | /home/qwen-venice/obsidian-vault/agents/aider/ |
-| Research       | /home/qwen-venice/obsidian-vault/research/     |
-| Logs           | /home/qwen-venice/obsidian-vault/logs/         |
+| Kategori     | Path                                           |
+| ------------ | ---------------------------------------------- |
+| Agent Output | /home/qwen-venice/obsidian-vault/agents/aider/ |
+| Research     | /home/qwen-venice/obsidian-vault/research/     |
+| Logs         | /home/qwen-venice/obsidian-vault/logs/         |
 
 ## Aider Configuration
 
