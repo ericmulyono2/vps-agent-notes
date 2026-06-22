@@ -190,7 +190,7 @@ def github_issues(repo, limit=10):
 
 def github_search(query, limit=10):
     """Search GitHub repositories using gh CLI."""
-    cmd = f'gh search repos "{query}" --limit {limit} --json nameWithOwner,description,stargazersCount,language,url'
+    cmd = f'gh search repos "{query}" --limit {limit} --json fullName,description,stargazersCount,language,url'
     stdout, stderr, rc = run(cmd, timeout=30)
     if rc != 0:
         return {"error": stderr or "gh failed", "rc": rc}
@@ -202,7 +202,7 @@ def github_search(query, limit=10):
             stars = r.get("stargazersCount", 0)
             lang = r.get("language", "?")
             desc = (r.get("description") or "")[:100]
-            out.append(f"{r['nameWithOwner']}  ⭐{stars}  {lang}\n    {desc}\n    {r['url']}")
+            out.append(f"{r['fullName']}  ⭐{stars}  {lang}\n    {desc}\n    {r['url']}")
         return "\n\n".join(out) if out else "No results."
     except json.JSONDecodeError:
         return stdout

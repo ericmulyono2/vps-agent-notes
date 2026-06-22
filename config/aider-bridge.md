@@ -56,6 +56,18 @@ File: `agents/aider/master-design-system-all-styles.md`
 - DeepLake ingested (id: `20260622T154758127819`)
 - Source: `/home/qwen-venice/coder-agent/master-design-system-all-styles.md`
 
+## Agent-Reach — Internet Eyes
+
+CLI: `agent-reach <twitter|reddit|youtube|web|github> ...`
+- Script: `agents/aider/agent_reach.py`
+- Docs: `research/agent-reach-skills.md`
+- Zero API fees: snscrape + yt-dlp + Jina Reader + gh CLI
+
+## Graphify — Knowledge Graph
+
+Skill: `.aider/graphify/SKILL.md`
+- Build: `cd /home/qwen-venice/coder-agent && graphify .`
+
 Sinkron: setiap update di coder-agent → copy ke vault → `sync-obsidian.sh`
 
-[[openclaw-bridge]] | [[super-prompt-qwen3-coder]] | [[master-design-system-all-styles]]
+[[openclaw-bridge]] | [[super-prompt-qwen3-coder]] | [[master-design-system-all-styles]] | [[agent-reach-skills]] | [[graphify]]
