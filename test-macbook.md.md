@@ -1,0 +1,1 @@
+Halo Qwen dan DeepSeek, ini catatan dari Macbook Eric
