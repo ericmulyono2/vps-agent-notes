@@ -7,9 +7,9 @@ tags: [rag, deeplake, index, knowledge-base]
 
 # RAG DeepLake Index
 
-> Status: **Aktif** — 1 dokumen ter-index.
+> Status: **Aktif** — 4 dokumen ter-index.
 > Path: `/home/qwen-venice/data/rag_store/`
-> Diperiksa: 2026-06-22 13:27 UTC
+> Diperiksa: 2026-06-22 13:30 UTC
 
 ## Ringkasan
 
@@ -17,7 +17,7 @@ Database DeepLake untuk [[qwen-venice-container]] sudah dibuat dengan schema len
 
 | Properti | Nilai |
 |----------|-------|
-| Total dokumen | **1** |
+| Total dokumen | **4** |
 | Schema version | 3.9.52 |
 | Embedding model | `all-MiniLM-L6-v2` (384 dimensi) |
 | Similarity threshold | 0.35 |
@@ -54,8 +54,11 @@ curl -X POST http://localhost:5050/v1/ingest \
 | ID | Sumber | Tipe | Teks (cuplikan) |
 |----|--------|------|------------------|
 | `20260622T132704178406` | `HuggingFace Glint-Research/Fable-5-traces` | `reasoning_traces` | 100 sampel penalaran logika tinggi, pelacakan eksekusi coding Fable-5, pola pikir abductive, strategi debugging otonom |
+| `20260622T133011060272` | `vps_infrastructure_profile` | `system_topology` | Ubuntu Server, Docker arsitektur container, resource monitoring RAM/CPU/disk, localhost bridge |
+| `20260622T133011165159` | `automation_rules` | `project_architecture` | Logging mandatory ke `logs/`, struktur modular `/research/` + `/config/`, semantic versioning, Git sync cron |
+| `20260622T133011260417` | `debugging_runbook` | `execution_patterns` | Catch stderr, permission denied/connection refused/file not found, rolling 3x auto-refactor sebelum prompt user |
 
-Lihat: [[fable5-dataset-log]]
+Lihat: [[fable5-dataset-log]] | [[rag-advanced-brain]]
 
 ## Rencana Index
 

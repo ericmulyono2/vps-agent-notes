@@ -52,6 +52,11 @@ tags: [session-log, agent-start, deeplake, rag]
 | 13:27 | Ingest Fable-5 traces ke DeepLake | via `POST /v1/ingest` |
 | 13:27 | Buat `fable5-dataset-log.md` | `research/fable5-dataset-log.md` |
 | 13:27 | Update index (1 doc, status Aktif) | `research/rag-deeplake-index.md` |
+| 13:30 | Ingest system_topology (VPS profile) | via `POST /v1/ingest` |
+| 13:30 | Ingest project_architecture (automation rules) | via `POST /v1/ingest` |
+| 13:30 | Ingest execution_patterns (error handling) | via `POST /v1/ingest` |
+| 13:30 | Buat `rag-advanced-brain.md` | `research/rag-advanced-brain.md` |
+| 13:30 | Update index (4 docs) | `research/rag-deeplake-index.md` |
 
 ## Observasi
 
