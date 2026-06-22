@@ -57,6 +57,12 @@ tags: [session-log, agent-start, deeplake, rag]
 | 13:30 | Ingest execution_patterns (error handling) | via `POST /v1/ingest` |
 | 13:30 | Buat `rag-advanced-brain.md` | `research/rag-advanced-brain.md` |
 | 13:30 | Update index (4 docs) | `research/rag-deeplake-index.md` |
+| 13:35 | Hapus `system-connectors.md` (salah) | — |
+| 13:35 | Buat `ui-ux-connectors.md` | `research/ui-ux-connectors.md` |
+| 13:35 | Instal 20 skill ke workspace Qwen | `/home/qwen-venice/coder-agent/skills/` |
+| 13:35 | Buat katalog skill Obsidian | `research/skill-catalog-qwen-aider.md` |
+| 13:35 | Buat log instalasi skill | `research/skills-installation-log.md` |
+| 13:35 | Update `CONVENTIONS.md` Aider | tambah Skills Library section |
 
 ## Observasi
 
