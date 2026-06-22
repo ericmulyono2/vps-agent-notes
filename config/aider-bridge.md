@@ -41,3 +41,5 @@ channel: aider
 tags: [code, design]
 ---
 ```
+
+[[openclaw-bridge]]
