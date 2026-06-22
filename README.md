@@ -35,3 +35,5 @@ obsidian-vault/
 cd "/Users/ericmulyono/Library/Mobile Documents/iCloud~md~obsidian/Documents/vps-agent-notes"
 git pull origin main --rebase
 ```
+
+[[aider-bridge]] [[openclaw-bridge]]
