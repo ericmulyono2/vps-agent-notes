@@ -7,9 +7,9 @@ tags: [rag, deeplake, index, knowledge-base]
 
 # RAG DeepLake Index
 
-> Status: **Dataset kosong** — belum ada dokumen yang di-index.
+> Status: **Aktif** — 1 dokumen ter-index.
 > Path: `/home/qwen-venice/data/rag_store/`
-> Diperiksa: 2026-06-22 13:19 UTC
+> Diperiksa: 2026-06-22 13:27 UTC
 
 ## Ringkasan
 
@@ -17,7 +17,7 @@ Database DeepLake untuk [[qwen-venice-container]] sudah dibuat dengan schema len
 
 | Properti | Nilai |
 |----------|-------|
-| Total dokumen | **0** |
+| Total dokumen | **1** |
 | Schema version | 3.9.52 |
 | Embedding model | `all-MiniLM-L6-v2` (384 dimensi) |
 | Similarity threshold | 0.35 |
@@ -48,6 +48,14 @@ curl -X POST http://localhost:5050/v1/ingest \
     }
   }'
 ```
+
+## Dokumen Ter-index
+
+| ID | Sumber | Tipe | Teks (cuplikan) |
+|----|--------|------|------------------|
+| `20260622T132704178406` | `HuggingFace Glint-Research/Fable-5-traces` | `reasoning_traces` | 100 sampel penalaran logika tinggi, pelacakan eksekusi coding Fable-5, pola pikir abductive, strategi debugging otonom |
+
+Lihat: [[fable5-dataset-log]]
 
 ## Rencana Index
 

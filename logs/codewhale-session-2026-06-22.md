@@ -27,6 +27,19 @@ tags: [session-log, agent-start, deeplake, rag]
 - Embedding model: `all-MiniLM-L6-v2`
 - Dibuat file [[rag-deeplake-index]] di `research/`
 
+### 13:27 UTC — RAG Ingest: Fable-5 Traces
+
+- Ingest berhasil via `POST /v1/ingest` — **dokumen pertama** masuk DeepLake
+- ID: `20260622T132704178406`, sumber: `Glint-Research/Fable-5-traces`
+- Dataset sekarang: **1 dokumen** (sebelumnya 0)
+- Dibuat [[fable5-dataset-log]] di `research/`
+- [[rag-deeplake-index]] diperbarui — status "Aktif", daftar dokumen ter-index
+
+### 13:20–13:25 UTC — RAG DeepLake Setup
+
+- Skrip `populate_rag.py` dibuat di vault root (pending eksekusi — deeplake belum terinstall di host)
+- Container qwen-venice sempat OOM saat ingest pertama, worker auto-restart
+
 ## Action Log
 
 | Waktu | Aksi | File |
@@ -35,6 +48,10 @@ tags: [session-log, agent-start, deeplake, rag]
 | 13:20 | Audit DeepLake dataset (0 docs) | — |
 | 13:20 | Buat `rag-deeplake-index.md` | `research/rag-deeplake-index.md` |
 | 13:20 | Buat session log ini | `logs/codewhale-session-2026-06-22.md` |
+| 13:25 | Buat `populate_rag.py` | `populate_rag.py` |
+| 13:27 | Ingest Fable-5 traces ke DeepLake | via `POST /v1/ingest` |
+| 13:27 | Buat `fable5-dataset-log.md` | `research/fable5-dataset-log.md` |
+| 13:27 | Update index (1 doc, status Aktif) | `research/rag-deeplake-index.md` |
 
 ## Observasi
 
