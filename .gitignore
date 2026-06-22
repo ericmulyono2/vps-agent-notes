@@ -10,3 +10,5 @@ Thumbs.db
 
 # Sync lock
 .sync.lock
+.sync.lock
+logs/sync.log
