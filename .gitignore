@@ -1,14 +1,6 @@
-# Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/hotkeys.json
-.trash/
-
-# OS
+# Obsidian Vault — hanya catatan yang masuk
+*.pyc
+__pycache__/
 .DS_Store
-Thumbs.db
-
-# Sync lock
-.sync.lock
-.sync.lock
-logs/sync.log
+*.log
+sync.log
