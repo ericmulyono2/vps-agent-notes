@@ -107,6 +107,12 @@ timedatectl                         # Timezone & NTP sync
 ### 2. 🐛 DEBUGGING PROTOCOL (WAJIB)
 
 ```
+FASE 0 — KNOWLEDGE CHECK (AUTO)
+→ Sebelum debugging, query Qwen Uncensored KB:
+     auto-kb "deskripsi error" inject
+→ Gunakan hasil untuk cek known patterns & solusi
+→ Skip jika dataset belum di-build atau AUTO_KB_ENABLED=0
+
 FASE 1 — TRIAGE
 → Identifikasi: hardware? network? software? config?
 → Cek logs: journalctl -xe, docker logs <name>, tail file log
@@ -398,6 +404,8 @@ Format log:
 - VPS Profile → [[VPS Profile srv1672787]]
 - Memory → [[AI Agent Context]]
 - Rules → [[Master Rules]]
+- Knowledge Base → [[Qwen Uncensored KB Toolkit]]
+- CLI Tools → `qwen-kb`, `auto-kb`
 
 ---
 
