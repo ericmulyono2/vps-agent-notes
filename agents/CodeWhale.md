@@ -16,7 +16,7 @@
 
 ## Responsibilities
 
-- **Infrastruktur**: Kelola service VPS (n8n, OpenClaw, Venice, Penpot, OpenHands)
+- **Infrastruktur**: Kelola service VPS (n8n, OpenClaw, Venice, Penpot)
 - **Config**: Maintain `openclaw.json` (IMMUTABLE), `exec-approvals.json`, docker-compose
 - **Cron**: Monitor & maintain 5-min cycles, auto-heal scripts
 - **Auto-Heal**: `sigma_orchestrator_autoheal.py` — detect + fix + alert
@@ -32,8 +32,6 @@
 | `agent-start` | Startup context display |
 | `agent-handoff` | Update session handoff |
 | `qwen-kb` | Semantic search Qwen Uncensored KB (Deep Lake) |
-| `vega` | VEGA CLI — terminal AI chat |
-| `kepala-status` | Quick VPS health check |
 
 ---
 
@@ -65,7 +63,6 @@ Key skills:
 - [[graphify]] — Agent MOC hub
 - [[Orchestrator]] — Sigma Orchestrator detail
 - [[Qwen Uncensored KB Toolkit]] — Knowledge base toolkit
-- [[Kepala VPS Dashboard]] — Service dashboard
 - [[MOC Memory]] — Memory systems
 
 ---

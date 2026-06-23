@@ -92,12 +92,6 @@ Setiap file priority dapat preamble uncensored directive yang meng-override semu
 - **File**: `super-prompt-qwen3-coder.md` → tambah blok `## Knowledge Base` dengan top-k hasil query
 - **Path**: `/home/qwen-venice/coder-agent/`
 
-### 🖥️ [[VEGA - Super Prompt|VEGA / OpenHands]] (Kepala VPS)
-- **Use case**: VEGA debugging protocol bisa pakai KB untuk pattern matching error
-- **Cara**: Saat VEGA temui error tidak dikenal → query Deep Lake KB untuk solusi
-- **Integration point**: VEGA Super Prompt → tambah tool `query_kb` di command chain
-- **Path**: `/opt/kepala-vps/`
-
 ### 📡 [[Orchestrator|OpenClaw Gabriel — DeepSeek V4-Pro]]
 - **Use case**: Gabriel bisa pakai uncensored prompt patterns untuk memperkuat autonomy
 - **Cara**: Chunks `system-prompt-executing-actions-with-care.md` + `agent-prompt-plan-mode-enhanced.md` → inject ke Gabriel context via Sigma Orchestrator

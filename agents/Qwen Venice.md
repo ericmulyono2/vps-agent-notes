@@ -27,9 +27,7 @@ Qwen Venice adalah AI Gateway yang menjembatani semua agent ke model Qwen 3 Code
 
 ## Agents yang Menggunakan
 
-- **[[Kepala VPS Dashboard|VEGA]]** (OpenHands) — Telegram Bot + Dashboard
 - **[[aider-bridge|Aider + Qwen Coder]]** (XERO) — Code generation
-- **[[VEGA - Super Prompt|VEGA CLI]]** — Terminal chat
 
 ---
 
@@ -56,7 +54,6 @@ curl http://localhost:5050/health
 ## 🔗 Cross-Reference
 
 - [[graphify]] — Agent MOC hub
-- [[Kepala VPS Dashboard]] — Service dashboard
 - [[aider-bridge]] — Aider bridge config
 - [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base builder
 

@@ -11,18 +11,9 @@ Agent-agent yang menjalankan fondasi VPS — gateway, orchestration, dan adminis
 
 | Agent | Model | Role | Note |
 |-------|-------|------|------|
-| **[[Kepala VPS Dashboard|VEGA]]** (OpenHands) | Qwen 3 Coder 480B | VPS Executive & General Administrator | [[VEGA - Super Prompt]] |
 | **[[openclaw-bridge|OpenClaw]]** (Gabriel) | DeepSeek V4-Pro / Kimi k2.7-code | SPV Decision Maker + Gateway | [[openclaw-bridge]] |
 | **[[Qwen Venice]]** | Qwen 3 Coder 480B Turbo | AI Gateway — OpenAI-compatible bridge ke Venice.ai | [[Qwen Venice]] |
-| **[[Kepala VPS Dashboard|n8n]]** | — | Workflow Automation Engine (7 Sigma modules) | [[Kepala VPS Dashboard]] |
-
-### VEGA (OpenHands)
-- **Dashboard**: `http://31.97.220.82` (port 80)
-- **Telegram Bot**: @openhandAhin_bot (WHITELIST Chat ID 674622107)
-- **CLI**: `vega` — terminal AI chat
-- **Service**: `openhands-canvas.service` + `kepala-vps.service`
-- **Super Prompt**: [[VEGA - Super Prompt]] (420 lines)
-- **Dashboard Note**: [[Kepala VPS Dashboard]]
+| **[[Qwen Venice|n8n]]** | — | Workflow Automation Engine (7 Sigma modules) | [[Qwen Venice]] |
 
 ### OpenClaw (Gabriel)
 - **Gateway**: `http://31.97.220.82:18789`
@@ -182,7 +173,6 @@ Tools yang digunakan agent untuk berinteraksi dengan dunia luar.
 | **1** | Gabriel (SPV) | `moonshot/kimi-k2.7-code` | Vision, reasoning, 262K ctx |
 | **2** | Gabriel (Fallback) | `deepseek/deepseek-v4-pro` | 1M ctx |
 | **Orch** | Orchestrator | `deepseek/deepseek-v4-pro` | Kimi fallback |
-| **VEGA** | OpenHands | `qwen3-coder-480b-turbo` | Via Venice API |
 | **XERO** | Aider | `qwen3-coder-480b-turbo` | Via Venice API |
 | **Dev** | CodeWhale | `deepseek-v4-pro` | Terminal agent |
 
@@ -194,7 +184,6 @@ Tools yang digunakan agent untuk berinteraksi dengan dunia luar.
 - [[MOC Self-Learning]] — Self-improving & self-healing
 - [[MOC Skills]] — Katalog skill lengkap
 - [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base toolkit
-- [[Kepala VPS Dashboard]] — Status real-time semua service
 - [[README]] — Struktur vault & sync guide
 - [[AGENTS]] — Project instructions
 

@@ -89,7 +89,6 @@ Pre-screen → Research → Quant → Risk → GABRIEL → Junior Trader → Sen
 
 - [[graphify]] — Agent MOC hub
 - [[Orchestrator]] — Detail orchestrator
-- [[Kepala VPS Dashboard]] — Live status
 
 ---
 

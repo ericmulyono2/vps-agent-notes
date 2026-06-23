@@ -191,7 +191,7 @@ SESSION END
 Selain belajar dari session sendiri, agent juga bisa belajar dari **external knowledge base**:
 - **[[Qwen Uncensored KB Toolkit]]**: Deep Lake vector store berisi system prompt Claude (uncensored + renamed → Qwen)
 - Query semantic search untuk dapat best practices, debugging patterns, orchestration strategies
-- Integrasi: Aider XERO, VEGA OpenHands, Gabriel OpenClaw, CodeWhale
+- Integrasi: Aider XERO, Gabriel OpenClaw, CodeWhale
 
 ---
 

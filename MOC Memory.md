@@ -160,7 +160,6 @@ Agent Done
 - [[MOC Self-Learning]] — Self-improving systems
 - [[MOC Skills]] — Skills catalog
 - [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base + Deep Lake RAG
-- [[Kepala VPS Dashboard]] — Status实时 services
 - [[README]] — Vault structure
 
 ---

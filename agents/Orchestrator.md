@@ -101,7 +101,6 @@ Enforced di 5 layer: Entry Filter → Pre-Entry Gate → Junior Trader → Posit
 - [[Sigma Scalping Team]] — Team overview
 - [[CodeWhale]] — Orchestrator utama VPS
 - [[SIGMA_MEMORY]] — Persistent memory
-- [[Kepala VPS Dashboard]] — Live status
 
 ---
 

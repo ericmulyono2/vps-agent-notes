@@ -45,7 +45,6 @@ obsidian-vault/
 | OpenClaw (Gabriel) | DeepSeek V4-Pro / Kimi k2.7-code | `agents/openclaw/` | [[openclaw-bridge]] |
 | Aider (XERO) | Qwen Coder 480B | `agents/aider/` | [[aider-bridge]] |
 | CodeWhale | DeepSeek V4-Pro | `memory/`, `research/` | [[CodeWhale]] |
-| VEGA (OpenHands) | Qwen Coder 480B | `memory/`, `research/` | [[VEGA - Super Prompt]] |
 | Sigma Orchestrator | DeepSeek V4-Pro | `/root/AI_AGENT_CONTEXT/` | [[Orchestrator]] |
 | Qwen Venice | Qwen Coder 480B | Gateway (port 5050) | [[Qwen Venice]] |
 
