@@ -171,6 +171,7 @@ Tools yang digunakan agent untuk berinteraksi dengan dunia luar.
 | **[[rag-deeplake-index|DeepLake RAG]]** | Vector store + document retrieval | [[rag-advanced-brain]] |
 | **[[graphify-coder-agent-report|Graphify]]** | Knowledge graph — 11,844 nodes, 17,989 edges | `/graphify` |
 | **Penpot MCP** | Design manipulation via LLM | `http://31.97.220.82:4401/mcp` |
+| **[[Qwen Uncensored KB Toolkit]]** | Claude→Qwen uncensored knowledge base + Deep Lake RAG | `/home/qwen-venice/qwen-uncensored-kb/` |
 
 ---
 
@@ -192,6 +193,7 @@ Tools yang digunakan agent untuk berinteraksi dengan dunia luar.
 - [[MOC Memory]] — Sistem memory agent
 - [[MOC Self-Learning]] — Self-improving & self-healing
 - [[MOC Skills]] — Katalog skill lengkap
+- [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base toolkit
 - [[Kepala VPS Dashboard]] — Status real-time semua service
 - [[README]] — Struktur vault & sync guide
 - [[AGENTS]] — Project instructions

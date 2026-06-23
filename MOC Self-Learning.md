@@ -187,6 +187,12 @@ SESSION END
   └── Handoff → SESSION_HANDOFF.md
 ```
 
+### Knowledge Enrichment via Qwen Uncensored KB
+Selain belajar dari session sendiri, agent juga bisa belajar dari **external knowledge base**:
+- **[[Qwen Uncensored KB Toolkit]]**: Deep Lake vector store berisi system prompt Claude (uncensored + renamed → Qwen)
+- Query semantic search untuk dapat best practices, debugging patterns, orchestration strategies
+- Integrasi: Aider XERO, VEGA OpenHands, Gabriel OpenClaw, CodeWhale
+
 ---
 
 ## 🔗 Cross-Reference
@@ -194,6 +200,7 @@ SESSION END
 - [[graphify]] — Agent MOC (hub utama)
 - [[MOC Memory]] — Sistem memory agent
 - [[MOC Skills]] — Katalog skill lengkap
+- [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base
 - [[skill-catalog-qwen-aider]] — Skill terinstal di Aider
 - [[skills-installation-log]] — Installation log
 - [[codewhale-session-2026-06-22]] — Contoh session log

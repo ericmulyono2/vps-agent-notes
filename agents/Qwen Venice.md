@@ -39,6 +39,7 @@ Qwen Venice adalah AI Gateway yang menjembatani semua agent ke model Qwen 3 Code
 - Ingestion: `POST /v1/ingest`
 - Documents: [[master-design-system-all-styles]], [[super-prompt-qwen3-coder]]
 - Reports: [[rag-deeplake-index]], [[rag-advanced-brain]]
+- **Qwen Uncensored KB**: [[Qwen Uncensored KB Toolkit]] — separate Deep Lake dataset (Claude→Qwen uncensored prompts), integrable via `/v1/ingest`
 
 ---
 
@@ -57,6 +58,7 @@ curl http://localhost:5050/health
 - [[graphify]] — Agent MOC hub
 - [[Kepala VPS Dashboard]] — Service dashboard
 - [[aider-bridge]] — Aider bridge config
+- [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base builder
 
 ---
 

@@ -152,6 +152,7 @@
 - CodeWhale: 50+ skills di `/root/.codewhale/skills/`
 - Aider/Qwen: 20 skills diinstal dari CodeWhale → [[skills-installation-log]]
 - Catalog detail: [[skill-catalog-qwen-aider]]
+- **Qwen Uncensored KB Toolkit**: [[Qwen Uncensored KB Toolkit]] — full pipeline: clone repos → uncensor → chunk → Deep Lake vector DB. 4 script, one-click `run_all.sh`.
 
 ---
 
@@ -160,6 +161,7 @@
 - [[graphify]] — Agent MOC (hub utama)
 - [[MOC Memory]] — Sistem memory
 - [[MOC Self-Learning]] — Self-improving systems
+- [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base toolkit
 - [[aider-bridge]] — Aider bridge config
 - [[openclaw-bridge]] — OpenClaw bridge config
 

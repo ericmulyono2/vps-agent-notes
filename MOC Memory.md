@@ -118,6 +118,7 @@ cd "~/Documents/vps-agent-notes" && git pull origin main --rebase
   - [[master-design-system-all-styles]] (id: `20260622T154758127819`)
   - [[super-prompt-qwen3-coder]]
 - **Reports**: [[rag-deeplake-index]], [[rag-advanced-brain]]
+- **Qwen Uncensored KB**: [[Qwen Uncensored KB Toolkit]] — dedicated Deep Lake vector store untuk system prompt Claude → Qwen (uncensored)
 
 ---
 
@@ -158,6 +159,7 @@ Agent Done
 - [[graphify]] — Agent MOC (hub utama)
 - [[MOC Self-Learning]] — Self-improving systems
 - [[MOC Skills]] — Skills catalog
+- [[Qwen Uncensored KB Toolkit]] — Uncensored knowledge base + Deep Lake RAG
 - [[Kepala VPS Dashboard]] — Status实时 services
 - [[README]] — Vault structure
 
