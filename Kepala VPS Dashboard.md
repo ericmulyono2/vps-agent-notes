@@ -1,7 +1,7 @@
 # 🧠 Kepala VPS — Dashboard
 
 > **AI Administrator VPS srv1672787**  
-> Bot: [@openhandAhin_bot](https://t.me/openhandAhin_bot) | Dashboard: [OpenHands](http://31.97.220.82:3000)
+> Bot: [@openhandAhin_bot](https://t.me/openhandAhin_bot) | Dashboard: [OpenHands](http://31.97.220.82)
 
 ---
 
@@ -17,7 +17,7 @@ tag:#trading
 - 🟢 OpenClaw Gateway — `http://31.97.220.82:18789`  
 - 🟢 Qwen Venice API — `http://31.97.220.82:5050`
 - 🟢 Penpot Design — `http://31.97.220.82:9001`
-- 🟢 OpenHands Canvas — `http://31.97.220.82:3000`
+- 🟢 OpenHands Canvas — `http://31.97.220.82`
 
 ---
 
@@ -25,7 +25,7 @@ tag:#trading
 
 | Link | Purpose |
 |------|---------|
-| [OpenHands Dashboard](http://31.97.220.82:3000) | AI Agent Control Center |
+| [OpenHands Dashboard](http://31.97.220.82) | AI Agent Control Center |
 | [n8n Editor](http://31.97.220.82:5678) | Workflow Automation |
 | [Telegram Bot](https://t.me/openhandAhin_bot) | Remote VPS Control |
 
@@ -72,12 +72,12 @@ journalctl -u openhands-canvas -f
 ## 🖥️ Akses dari Windows
 
 **Dashboard Web:**
-- Buka `http://31.97.220.82:3000` di browser
+- Buka `http://31.97.220.82` di browser
 - Kalau ga bisa → SSH tunnel:
   ```powershell
-  ssh -L 3000:localhost:3000 root@31.97.220.82
+  ssh -L 3000:localhost:80 root@31.97.220.82
   ```
-  Lalu buka `http://localhost:3000`
+  Lalu buka `http://localhost:80`
 
 **VEGA CLI dari Windows:**
 - SSH ke VPS dulu, lalu ketik `vega`
