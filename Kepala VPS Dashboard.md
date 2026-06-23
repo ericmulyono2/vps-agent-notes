@@ -49,6 +49,12 @@ Ketik aja bebas — "Cek container", "Kenapa n8n error?", "Restart OpenClaw", "G
 ## 🛠️ Terminal Commands (di VPS)
 
 ```bash
+# VEGA CLI — Chat AI langsung di terminal (mirip CodeWhale)
+vega                        # Mode interaktif
+vega "cek status docker"    # Single command
+vega --status               # Quick health check
+vega --system               # Lihat system prompt
+
 # Cek semua service
 kepala-status
 
@@ -62,6 +68,19 @@ systemctl restart openhands-canvas
 journalctl -u kepala-vps -f
 journalctl -u openhands-canvas -f
 ```
+
+## 🖥️ Akses dari Windows
+
+**Dashboard Web:**
+- Buka `http://31.97.220.82:3000` di browser
+- Kalau ga bisa → SSH tunnel:
+  ```powershell
+  ssh -L 3000:localhost:3000 root@31.97.220.82
+  ```
+  Lalu buka `http://localhost:3000`
+
+**VEGA CLI dari Windows:**
+- SSH ke VPS dulu, lalu ketik `vega`
 
 ---
 
