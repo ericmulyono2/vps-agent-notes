@@ -31,6 +31,7 @@
 |------|--------|
 | `agent-start` | Startup context display |
 | `agent-handoff` | Update session handoff |
+| `qwen-kb` | Semantic search Qwen Uncensored KB (Deep Lake) |
 | `vega` | VEGA CLI — terminal AI chat |
 | `kepala-status` | Quick VPS health check |
 
@@ -46,6 +47,7 @@ Key skills:
 - [[self-improving-agent]] — Multi-memory learning
 - [[autonomous-fixes]] — Auto-fix test findings
 - [[openclaw-self-healing]] — 4-tier auto-heal
+- [[Qwen Uncensored KB Toolkit|qwen-uncensored-kb]] — Semantic search Claude→Qwen knowledge base
 
 ---
 
@@ -62,6 +64,7 @@ Key skills:
 
 - [[graphify]] — Agent MOC hub
 - [[Orchestrator]] — Sigma Orchestrator detail
+- [[Qwen Uncensored KB Toolkit]] — Knowledge base toolkit
 - [[Kepala VPS Dashboard]] — Service dashboard
 - [[MOC Memory]] — Memory systems
 
