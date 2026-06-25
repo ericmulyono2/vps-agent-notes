@@ -36,6 +36,19 @@
 4. JANGAN menimpa file yang sudah ada tanpa konfirmasi — selalu append atau
    buat file baru dengan timestamp.
 
+## 🔗 Cross-Reference
+
+- [[graphify]] — Agent MOC hub
+- [[graphify-coder-agent-report]] — Knowledge graph report
+- [[Kepala VPS Dashboard]] — VPS dashboard
+- [[Untitled Base]] — Base note
+- [[aider-bridge]] — Aider bridge
+- [[CodeWhale]] — Orchestrator utama
+- [[deepseekv4pro]] — DeepSeek V4-Pro model
+- [[kimicode]] — Kimi Code k2.7 model
+
+---
+
 ## Sync Cron (opsional)
 
 Untuk auto-sync berkala, tambahkan cron:

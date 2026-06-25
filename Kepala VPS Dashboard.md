@@ -84,4 +84,26 @@ journalctl -u openhands-canvas -f
 
 ---
 
+---
+
+## 🤖 Connected Agents
+
+| Agent | Note | Role |
+|-------|------|------|
+| [[CodeWhale]] | Orchestrator utama | Infra, config, auto-heal |
+| [[aider-bridge|Aider + Qwen Coder]] | XERO | Code gen, UI/UX, full-stack |
+| [[openclaw-bridge|OpenClaw + DeepSeek]] | Gabriel | SPV Decision Maker + Gateway |
+| [[deepseekv4pro|DeepSeek V4-Pro]] | LLM Engine | Primary reasoning 1M ctx |
+| [[kimicode|Kimi Code k2.7]] | LLM Engine | Vision, SPV primary, fallback |
+
+---
+
+## 🔗 Cross-Reference
+
+- [[graphify]] — Agent MOC hub
+- [[graphify-coder-agent-report]] — Knowledge graph report
+- [[Untitled Base]] — Base note
+
+---
+
 *Last updated: 2026-06-23 | Powered by Qwen 3 Coder 480B Turbo*

@@ -70,4 +70,4 @@ Skill: `.aider/graphify/SKILL.md`
 
 Sinkron: setiap update di coder-agent → copy ke vault → `sync-obsidian.sh`
 
-[[openclaw-bridge]] | [[super-prompt-qwen3-coder]] | [[master-design-system-all-styles]] | [[agent-reach-skills]] | [[graphify]]
+[[openclaw-bridge]] | [[super-prompt-qwen3-coder]] | [[master-design-system-all-styles]] | [[agent-reach-skills]] | [[graphify]] | [[graphify-coder-agent-report]] | [[Kepala VPS Dashboard]] | [[Untitled Base]] | [[deepseekv4pro]] | [[kimicode]]

@@ -61,9 +61,14 @@ Key skills:
 ## 🔗 Cross-Reference
 
 - [[graphify]] — Agent MOC hub
+- [[graphify-coder-agent-report]] — Knowledge graph report (11,844 nodes)
+- [[Kepala VPS Dashboard]] — VPS dashboard
+- [[Untitled Base]] — Base note
 - [[Orchestrator]] — Sigma Orchestrator detail
 - [[Qwen Uncensored KB Toolkit]] — Knowledge base toolkit
 - [[MOC Memory]] — Memory systems
+- [[deepseekv4pro]] — DeepSeek V4-Pro model
+- [[kimicode]] — Kimi Code k2.7 model
 
 ---
 

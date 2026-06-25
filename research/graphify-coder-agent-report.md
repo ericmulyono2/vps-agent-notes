@@ -1,5 +1,8 @@
 # Graph Report - .  (2026-06-22)
 
+> **Connected Agents**: [[CodeWhale]] | [[aider-bridge|Aider-Qwen]] | [[openclaw-bridge|OpenClaw-DeepSeek]] | [[deepseekv4pro|DeepSeek V4-Pro]] | [[kimicode|Kimi Code]]
+> **Cross-Ref**: [[graphify]] | [[Kepala VPS Dashboard]] | [[Untitled Base]]
+
 ## Corpus Check
 - cluster-only mode — file stats not available
 
