@@ -1,15 +1,18 @@
 # 🧠 Kepala VPS — Dashboard
 
 > **AI Administrator VPS srv1672787**  
-> Bot: [@openhandAhin_bot](https://t.me/openhandAhin_bot) | Dashboard: [OpenHands](http://31.97.220.82)
+> Dashboard: [OpenClaw](http://31.97.220.82:18789) | n8n: [Editor](http://31.97.220.82:5678)
 
 ---
 
-## 📊 Status Cepat
+## 📊 Status Cepat — 02 Jul 2026
 
-```query
-path:sigma-scalping-team
-tag:#trading
+```
+FAILED SERVICES:  0
+ALL SERVICES:     6/6 active (sigma-trading, agent-reach, cognee, telegram, redis, fail2ban)
+DOCKER:           10 containers healthy
+DISK:             73G/193G (38%)
+MEMORY:           5.6G/15G
 ```
 
 **Services:**
@@ -17,7 +20,23 @@ tag:#trading
 - 🟢 OpenClaw Gateway — `http://31.97.220.82:18789`  
 - 🟢 Qwen Venice API — `http://31.97.220.82:5050`
 - 🟢 Penpot Design — `http://31.97.220.82:9001`
-- 🟢 OpenHands Canvas — `http://31.97.220.82`
+
+---
+
+## 📈 Trading — Sigma Scalping
+
+| Metric | Value |
+|--------|-------|
+| Positions | 7 SHORT (LIVE) |
+| Total PnL | -1.55 USDT |
+| Equity | ~$240 |
+| Fear & Greed | 19 (Extreme Fear) |
+| Regime | BEARISH — SHORT only |
+| Danger Zone | BNB (-8.5%), AVAX (-6.7%) |
+
+**Pipeline**: All 9 n8n modules active, DRY_RUN=false, SL/TP enforced  
+**Model chain**: DeepSeek v4-pro → Venice Qwen 3.7 Plus (fallback, validated)  
+**Cron jobs**: pipeline-hourly + SIGMA Trading Report → timeout 900s + Venice fallback
 
 ---
 
@@ -25,85 +44,70 @@ tag:#trading
 
 | Link | Purpose |
 |------|---------|
-| [OpenHands Dashboard](http://31.97.220.82) | AI Agent Control Center |
+| [OpenClaw Gateway](http://31.97.220.82:18789) | AI Agent Gateway |
 | [n8n Editor](http://31.97.220.82:5678) | Workflow Automation |
-| [Telegram Bot](https://t.me/openhandAhin_bot) | Remote VPS Control |
+| [Qwen Venice](http://31.97.220.82:5050/health) | AI Bridge API |
 
 ---
 
-## 🤖 Telegram Commands
+## 🤖 AI Agents
 
-| Command | Fungsi |
-|---------|--------|
-| `/start` | Perkenalan Kepala VPS |
-| `/status` | Cek status server real-time |
-| `/trading` | Status trading Sigma Scalping |
-| `/logs [service]` | Lihat log n8n/openclaw/system |
-| `/help` | Bantuan lengkap |
+| Agent | Model | Role |
+|-------|-------|------|
+| **CodeWhale** | DeepSeek V4-Pro | Orchestrator — infra, config, auto-heal |
+| **Gabriel (OpenClaw)** | DeepSeek V4-Pro + Venice | SPV Decision Maker + Gateway |
+| **Qwen Coder** | Qwen 3 Coder 480B | Code gen, UI/UX, full-stack (via Venice) |
+| **Sigma Pipeline** | DeepSeek V4-Flash × 6 | Research, Quant, Risk, Execution |
 
-**Chat santai:**  
-Ketik aja bebas — "Cek container", "Kenapa n8n error?", "Restart OpenClaw", "Gimana kabar VPS?"
+**Fallback chain**: DeepSeek → Venice/Qwen (DIFFERENT provider, validated Jul 1)
 
 ---
 
-## 🛠️ Terminal Commands (di VPS)
+## 🛠️ Terminal Commands
 
 ```bash
-# VEGA CLI — Chat AI langsung di terminal (mirip CodeWhale)
-vega                        # Mode interaktif
-vega "cek status docker"    # Single command
-vega --status               # Quick health check
-vega --system               # Lihat system prompt
+# System check
+systemctl status sigma-trading agent-reach-news cognee-memory oc-telegram-bot
+docker ps --format '{{.Names}} {{.Status}}'
 
-# Cek semua service
-kepala-status
+# OpenClaw management
+docker logs markasbesar-openclaw-1 --tail 50
+docker restart markasbesar-openclaw-1
 
-# Restart Kepala VPS
-systemctl restart kepala-vps
+# n8n management
+n8n-helper.sh workflows
+n8n-helper.sh "executions?workflowId=qUjwDi48068STPTK&limit=3"
 
-# Restart OpenHands
-systemctl restart openhands-canvas
+# Live position check
+node -e "..." # BingX API query from supervisor-feedback.js credentials
 
-# Lihat log
-journalctl -u kepala-vps -f
-journalctl -u openhands-canvas -f
+# Venice bridge test
+curl -s http://localhost:5050/health
+curl -s http://localhost:5050/v1/models
 ```
 
-## 🖥️ Akses dari Windows
+---
 
-**Dashboard Web:**
-- Buka `http://31.97.220.82` di browser
-- Kalau ga bisa → SSH tunnel:
-  ```powershell
-  ssh -L 3000:localhost:80 root@31.97.220.82
-  ```
-  Lalu buka `http://localhost:80`
+## 📋 Recent Fixes
 
-**VEGA CLI dari Windows:**
-- SSH ke VPS dulu, lalu ketik `vega`
+| Date | Fix |
+|------|-----|
+| Jul 2 | Telegram 400 — chat ID `674622107`→`6121123117` for ClipperHIN_bot |
+| Jul 2 | Cron timeout — pipeline-hourly + SIGMA TR 900s + Venice fallback |
+| Jul 2 | Binance timeout — fetch-market-data.js 15s→30s |
+| Jul 1 | Venice fallback — `/v1/models` endpoint, validated |
+| Jul 1 | Full VPS repair — 17 fixes (critical + warning) |
 
 ---
 
----
+## 🤖 Telegram Bots
 
-## 🤖 Connected Agents
-
-| Agent | Note | Role |
-|-------|------|------|
-| [[CodeWhale]] | Orchestrator utama | Infra, config, auto-heal |
-| [[aider-bridge|Aider + Qwen Coder]] | XERO | Code gen, UI/UX, full-stack |
-| [[openclaw-bridge|OpenClaw + DeepSeek]] | Gabriel | SPV Decision Maker + Gateway |
-| [[deepseekv4pro|DeepSeek V4-Pro]] | LLM Engine | Primary reasoning 1M ctx |
-| [[kimicode|Kimi Code k2.7]] | LLM Engine | Vision, SPV primary, fallback |
+| Bot | Chat `6121123117` | Chat `674622107` | Usage |
+|-----|:---:|:---:|---|
+| `@ClipperHIN_bot` | ✅ | ❌ | n8n + orchestrator |
+| `@AhinTeam_bot` | ✅ | ✅ | OpenClaw cron delivery |
+| `@AhinTim_bot` | ✅ | ❌ | (deprecated) |
 
 ---
 
-## 🔗 Cross-Reference
-
-- [[graphify]] — Agent MOC hub
-- [[graphify-coder-agent-report]] — Knowledge graph report
-- [[Untitled Base]] — Base note
-
----
-
-*Last updated: 2026-06-23 | Powered by Qwen 3 Coder 480B Turbo*
+*Last updated: 2026-07-02 06:40 UTC | CodeWhale DeepSeek V4-Pro*
