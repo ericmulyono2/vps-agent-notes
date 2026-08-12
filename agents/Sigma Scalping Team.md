@@ -41,7 +41,7 @@ Pre-screen → Research → Quant → Risk → GABRIEL → Junior Trader → Sen
 
 ---
 
-## ⚠️ Insiden 2026-08-12 — Rule #6 bocor di live, sudah dipatch
+## ✅ Insiden 2026-08-12 — Rule #6 bocor di live, sudah dipatch & diverifikasi
 
 Ditemukan 3 posisi live jauh di bawah $10 margin (BTC $1.25, ADA $2.81, AVAX $2.50) — bukan kejadian sekali, note Juni juga sempat catat "ETH-SHORT margin $3.14 — pre-Rule #6", jadi ini pola berulang.
 
@@ -49,7 +49,13 @@ Ditemukan 3 posisi live jauh di bawah $10 margin (BTC $1.25, ADA $2.81, AVAX $2.
 - `sigma_tp_sl_guard.py` (auto-close margin < $10) ada di kode tapi **gak pernah jalan** — gak di cron, gak jadi service. → **Fixed**: dipasang cron `*/5 * * * *`.
 - Kode **live** n8n "Junior Trader — Execute" (bukan file JSON di disk — itu basi/stale export, jangan dipercaya) sudah ter-degradasi dari versi yang didokumentasikan di atas: `minUSDT` kesulap dari $50 jadi $2 di semua simbol (floor efektif hilang), dan pre-check Rule #6 (`HARD_MIN_NOTIONAL`) hilang total dari kode live. → **Fixed**: dipatch balik via `n8n export:workflow` / `import:workflow` (bukan tulis sqlite langsung — riwayat corrupt ada), container di-restart.
 
-**Verifikasi**: sudah 3 posisi lama ditutup, cron guard tes manual jalan bersih, kode live sudah diverifikasi ke-update di DB. Belum ada bukti dari 1 eksekusi real pakai kode baru (nunggu sinyal trade natural berikutnya) — cek riwayat eksekusi n8n workflow `qUjwDi48068STPTK` setelah 2026-08-12 03:00 UTC buat mastiin.
+**Verifikasi**: 3 posisi lama ditutup, cron guard tes manual jalan bersih, kode live diverifikasi ke-update di DB. Eksekusi live `244469` (03:15 UTC) dipantau — pipeline jalan sampe node setelah titik edit (Gabriel, RR Gate, Execute?), konfirmasi n8n eksekusi definisi workflow yang sekarang, bukan versi lama ke-cache. Cycle itu hasilnya "wait" (gak ada sinyal trade), jadi Junior Trader Execute gak sempet jalan pas itu.
+
+Daripada nunggu jam buat sinyal trade natural (atau maksa manual-run yang risiko nembak order asli pake data cache lama), kode `Junior Trader — Execute` yang persis ke-deploy diambil terus dites standalone di Node (BingX call di-mock, gak ada order asli):
+- `sizeUsd` default 61 (kasus umum), BTC → `actualNotional $50.96` → margin $10.19 @5x. **Lolos.**
+- Sinyal size kecil eksplisit $20 → **ditolak**: `rejected_min_notional — Position notional $20.00 below minimum $50`.
+
+Kesimpulan: logic sekarang matematis gak bisa hasilin order di bawah $10 margin, dan nolak sinyal kekecilan sebelum sempet order. Ditambah guard cron 5 menit sebagai jaring independen — Rule #6 sekarang dijaga di dua titik (entry gate + post-entry monitor). **Status: FIXED & VERIFIED** (2026-08-12). Belum ada bukti dari sinyal trade real pertama pasca-fix — kalau kejadian lagi, cek bagian "Insiden 2026-08-12" ini dulu (file JSON basi, risiko corrupt sqlite, wajib restart container).
 
 **Pelajaran**: matrix enforcement di bawah ini (dari dulu) cuma menjelaskan *desain*, bukan bukti jalan. Ternyata beberapa layer di tabel bawah statusnya berbeda dari yang tercatat — lihat catatan status per baris.
 
